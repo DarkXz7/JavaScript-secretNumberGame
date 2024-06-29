@@ -1,4 +1,4 @@
-/*
+
 let palabraVeces = "vez";
 let secretNumber=5;
 let userNumber=0;
@@ -22,7 +22,23 @@ while(secretNumber != userNumber) {
     }
 
 }
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -31,11 +47,6 @@ while(secretNumber != userNumber) {
 
 
 //--------------------------Ejercicios------------------------------
-
-
-
-
-
 /*
 BUCLES
 -- Pide al usuario que ingrese un número
