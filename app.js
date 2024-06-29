@@ -1,23 +1,22 @@
+let palabraVeces = "vez";
 let secretNumber=5;
 let userNumber=0;
-
-
+let intentos = 1;
 while(secretNumber != userNumber) {
 
     let userNumber= prompt ("indica un numero del 1 al 10 por favor: ");
-
-
-
     console.log (userNumber);
-
     if (userNumber == secretNumber) {  
-        alert (`Acertaste, Tu numero es: ${userNumber}`);   
+        alert (`Acertaste, Tu numero es: ${userNumber}, Lo hiciste en: ${intentos} ${palabraVeces}`);   
     }  else {
         if (userNumber>secretNumber){
-            alert(`El numero secreto es menor`)
+            alert(`El numero secreto es menor`);
         } else {
-            alert(`el numero secreto es mayor`)
+            alert(`el numero secreto es mayor`);
         }
+        //incrementamos el contador cuando no se acierta el numero
+        intentos = intentos + 1;
+        palabraVeces='veces'
         //alert(`Lo siento, no acertaste el numero, el numero verdadero era ${secretNumber}`);
     }
 
