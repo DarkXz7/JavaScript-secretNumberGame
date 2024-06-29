@@ -18,7 +18,7 @@ while(secretNumber != userNumber) {
         } else {
             alert(`el numero secreto es mayor`)
         }
-        alert(`Lo siento, no acertaste el numero, el numero verdadero era ${secretNumber}`);
+        //alert(`Lo siento, no acertaste el numero, el numero verdadero era ${secretNumber}`);
     }
 
 }
