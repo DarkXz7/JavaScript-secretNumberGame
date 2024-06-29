@@ -41,9 +41,9 @@ BUCLES
 -- Pide al usuario que ingrese un número
 let numeroUsuario = parseInt(prompt("Ingresa un número hasta el cual deseas contar:"));
 
-// Inicializa el contador en 0
+/ Inicializa el contador en 0
 let contador = 0;
-// Bucle while que cuenta desde 0 hasta el número ingresado por el usuario
+/ Bucle while que cuenta desde 0 hasta el número ingresado por el usuario
 while (contador <= numeroUsuario) {
     alert(contador);  // Muestra el valor del contador en la consola
     contador++;  // Incrementa el contador en 1
