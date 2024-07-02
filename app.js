@@ -1,14 +1,22 @@
 
-let palabraVeces = "vez";
-let secretNumber=5;
+
+let secretNumber = Math.floor(Math.random()*10)+1;
 let userNumber=0;
 let intentos = 1;
-while(secretNumber != userNumber) {
+let maximosIntentos = 5;
 
-    let userNumber= prompt ("indica un numero del 1 al 10 por favor: ");
-    console.log (userNumber);
+console.log(secretNumber);
+
+
+while(userNumber != secretNumber) {
+
+    let userNumber= parseInt (prompt ("indica un numero del 1 al 10 por favor: "));
+    
+    console.log(secretNumber);
+    console.log (typeof(userNumber));
+
     if (userNumber == secretNumber) {  
-        alert (`Acertaste, Tu numero es: ${userNumber}, Lo hiciste en: ${intentos} ${palabraVeces}`);   
+        alert (`Acertaste, Tu numero es: ${userNumber}, Lo hiciste en ${intentos} ${intentos == 1 ? 'intento' : 'intentos'}`);   
     }  else {
         if (userNumber>secretNumber){
             alert(`El numero secreto es menor`);
@@ -16,8 +24,13 @@ while(secretNumber != userNumber) {
             alert(`el numero secreto es mayor`);
         }
         //incrementamos el contador cuando no se acierta el numero
-        intentos = intentos + 1;
-        palabraVeces='veces'
+        intentos ++; //el ++ hace que sea igual a intentos = intentos + 1;
+        
+        if (intentos>maximosIntentos){
+            alert(`LLegaste al numero maximo de ${maximosIntentos} intentos :)`);
+            break;
+        }
+        
         //alert(`Lo siento, no acertaste el numero, el numero verdadero era ${secretNumber}`);
     }
 
